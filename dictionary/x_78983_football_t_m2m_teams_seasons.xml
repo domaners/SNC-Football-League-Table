@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Football T M2m Teams Seasons" max_length="40" name="x_78983_football_t_m2m_teams_seasons" type="collection">
+        <element label="Season" max_length="32" name="season" reference="x_78983_football_t_season" type="reference"/>
+        <element label="Team" max_length="32" name="team" reference="x_78983_football_t_team" type="reference"/>
+        <index name="index">
+            <element name="season"/>
+        </index>
+        <index name="index2">
+            <element name="team"/>
+        </index>
+    </element>
+</database>

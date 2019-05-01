@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Result" max_length="40" name="x_78983_football_t_result" type="collection">
+        <element label="Away score" max_length="40" name="away_score" type="integer"/>
+        <element label="Away team" max_length="32" name="away_team" reference="x_78983_football_t_team" type="reference"/>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Home score" max_length="40" name="home_score" type="integer"/>
+        <element label="Home team" max_length="32" name="home_team" reference="x_78983_football_t_team" type="reference"/>
+        <element label="Season" max_length="32" name="season" reference="x_78983_football_t_season" type="reference"/>
+        <index name="index">
+            <element name="season"/>
+        </index>
+        <index name="index2">
+            <element name="home_team"/>
+        </index>
+        <index name="index3">
+            <element name="away_team"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Team" max_length="40" name="x_78983_football_t_team" type="collection">
+        <element label="Name" max_length="100" name="name" type="string"/>
+    </element>
+</database>

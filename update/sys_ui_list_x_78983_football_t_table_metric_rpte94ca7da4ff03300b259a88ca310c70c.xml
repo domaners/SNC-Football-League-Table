@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_78983_football_t_table_metric" version="2" view="RPTe94ca7da4ff03300b259a88ca310c70c">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>position</element>
+            <list_id display_value="x_78983_football_t_table_metric" element="NULL" name="x_78983_football_t_table_metric" parent="NULL" relationship="NULL" sys_domain="global" view="a14ceb5e4ff03300b259a88ca310c7dd">a33d6b9e4ff03300b259a88ca310c786</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 14:37:15</sys_created_on>
+            <sys_id>6b3d6b9e4ff03300b259a88ca310c786</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 14:37:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>team</element>
+            <list_id display_value="x_78983_football_t_table_metric" element="NULL" name="x_78983_football_t_table_metric" parent="NULL" relationship="NULL" sys_domain="global" view="a14ceb5e4ff03300b259a88ca310c7dd">a33d6b9e4ff03300b259a88ca310c786</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 14:37:15</sys_created_on>
+            <sys_id>eb3d6b9e4ff03300b259a88ca310c786</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 14:37:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>played</element>
+            <list_id display_value="x_78983_football_t_table_metric" element="NULL" name="x_78983_football_t_table_metric" parent="NULL" relationship="NULL" sys_domain="global" view="a14ceb5e4ff03300b259a88ca310c7dd">a33d6b9e4ff03300b259a88ca310c786</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 14:37:15</sys_created_on>
+            <sys_id>6f3d6b9e4ff03300b259a88ca310c786</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 14:37:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>wins</element>
+            <list_id display_value="x_78983_football_t_table_metric" element="NULL" name="x_78983_football_t_table_metric" parent="NULL" relationship="NULL" sys_domain="global" view="a14ceb5e4ff03300b259a88ca310c7dd">a33d6b9e4ff03300b259a88ca310c786</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 14:37:15</sys_created_on>
+            <sys_id>ef3d6b9e4ff03300b259a88ca310c786</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 14:37:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>draws</element>
+            <list_id display_value="x_78983_football_t_table_metric" element="NULL" name="x_78983_football_t_table_metric" parent="NULL" relationship="NULL" sys_domain="global" view="a14ceb5e4ff03300b259a88ca310c7dd">a33d6b9e4ff03300b259a88ca310c786</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 14:37:15</sys_created_on>
+            <sys_id>633d6b9e4ff03300b259a88ca310c787</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 14:37:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>losses</element>
+            <list_id display_value="x_78983_football_t_table_metric" element="NULL" name="x_78983_football_t_table_metric" parent="NULL" relationship="NULL" sys_domain="global" view="a14ceb5e4ff03300b259a88ca310c7dd">a33d6b9e4ff03300b259a88ca310c786</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 14:37:15</sys_created_on>
+            <sys_id>e33d6b9e4ff03300b259a88ca310c787</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 14:37:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>goals_for</element>
+            <list_id display_value="x_78983_football_t_table_metric" element="NULL" name="x_78983_football_t_table_metric" parent="NULL" relationship="NULL" sys_domain="global" view="a14ceb5e4ff03300b259a88ca310c7dd">a33d6b9e4ff03300b259a88ca310c786</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 14:37:15</sys_created_on>
+            <sys_id>673d6b9e4ff03300b259a88ca310c787</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 14:37:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>goals_against</element>
+            <list_id display_value="x_78983_football_t_table_metric" element="NULL" name="x_78983_football_t_table_metric" parent="NULL" relationship="NULL" sys_domain="global" view="a14ceb5e4ff03300b259a88ca310c7dd">a33d6b9e4ff03300b259a88ca310c786</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 14:37:15</sys_created_on>
+            <sys_id>e73d6b9e4ff03300b259a88ca310c787</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 14:37:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>goal_difference</element>
+            <list_id display_value="x_78983_football_t_table_metric" element="NULL" name="x_78983_football_t_table_metric" parent="NULL" relationship="NULL" sys_domain="global" view="a14ceb5e4ff03300b259a88ca310c7dd">a33d6b9e4ff03300b259a88ca310c786</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 14:37:15</sys_created_on>
+            <sys_id>6b3d6b9e4ff03300b259a88ca310c787</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 14:37:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>points</element>
+            <list_id display_value="x_78983_football_t_table_metric" element="NULL" name="x_78983_football_t_table_metric" parent="NULL" relationship="NULL" sys_domain="global" view="a14ceb5e4ff03300b259a88ca310c7dd">a33d6b9e4ff03300b259a88ca310c786</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 14:37:15</sys_created_on>
+            <sys_id>eb3d6b9e4ff03300b259a88ca310c787</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 14:37:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_78983_football_t_table_metric</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 14:37:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a33d6b9e4ff03300b259a88ca310c786</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_78983_football_t_table_metric</sys_name>
+            <sys_package display_value="Football Table Generator" source="x_78983_football_t">b95fe0614f303300b259a88ca310c787</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Football Table Generator">b95fe0614f303300b259a88ca310c787</sys_scope>
+            <sys_update_name>sys_ui_list_x_78983_football_t_table_metric_RPTe94ca7da4ff03300b259a88ca310c70c</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 14:37:15</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpte94ca7da4ff03300b259a88ca310c70c" name="RPTe94ca7da4ff03300b259a88ca310c70c">a14ceb5e4ff03300b259a88ca310c7dd</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

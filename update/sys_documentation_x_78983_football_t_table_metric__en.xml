@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Table Metric" language="en" table="x_78983_football_t_table_metric">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Table Metric</label>
+            <language>en</language>
+            <name>x_78983_football_t_table_metric</name>
+            <plural>Table Metrics</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-16 11:39:29</sys_created_on>
+            <sys_id>e784cb524fb03300b259a88ca310c7ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Table Metric</sys_name>
+            <sys_package display_value="Football Table Generator" source="x_78983_football_t">b95fe0614f303300b259a88ca310c787</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Football Table Generator">b95fe0614f303300b259a88ca310c787</sys_scope>
+            <sys_update_name>sys_documentation_x_78983_football_t_table_metric__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-16 11:39:29</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

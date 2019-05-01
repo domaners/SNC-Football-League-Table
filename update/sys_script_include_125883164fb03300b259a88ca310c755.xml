@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_78983_football_t.tableGeneratorUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>tableGeneratorUtils</name>
+        <script><![CDATA[var tableGeneratorUtils = Class.create();
+tableGeneratorUtils.prototype = {
+	initialize: function() {
+	},
+	
+	createTableMetricByDate: function(date, season) {
+		
+		tableObject = {};
+			
+		var teamsM2M = new GlideRecord("x_78983_football_t_m2m_teams_seasons");
+		teamsM2M.addQuery("season", season.sys_id+'');
+		teamsM2M.query();
+		while(teamsM2M.next()) {
+			tableObject[teamsM2M.team.name+''] = {
+				"name": teamsM2M.team.name+'',
+				"sys_id": teamsM2M.team.sys_id+'',
+				"position": 0,
+				"played": 0,
+				"wins": 0,
+				"draws": 0,
+				"losses": 0,
+				"goals_for": 0,
+				"goals_against": 0,
+				"goal_difference": 0,
+				"points": 0
+			};
+		}
+
+		// Get all results between start of season and date passed in function
+		var resultsEncodedQuery = "dateBETWEENjavascript:gs.dateGenerate('" + season.start_date + "','start')@javascript:gs.dateGenerate('" + date + "','end')";
+		gs.info("resultsEncodedQuery: " + resultsEncodedQuery);
+
+		var resultsGr = new GlideRecord("x_78983_football_t_result");
+		resultsGr.addEncodedQuery(resultsEncodedQuery);
+		resultsGr.query();
+
+		while(resultsGr.next()) {
+
+			var homeTeamName = resultsGr.home_team.name+'';
+			var awayTeamName = resultsGr.away_team.name+'';
+
+			tableObject[homeTeamName].played += 1;
+			tableObject[awayTeamName].played += 1;
+
+			tableObject[homeTeamName].goals_for += resultsGr.home_score;
+			tableObject[homeTeamName].goals_against += resultsGr.away_score;
+			tableObject[awayTeamName].goals_for += resultsGr.away_score;
+			tableObject[awayTeamName].goals_against += resultsGr.home_score;
+
+			if(resultsGr.home_score > resultsGr.away_score) {
+				tableObject[homeTeamName].points += 3;
+				tableObject[homeTeamName].wins += 1;
+				tableObject[awayTeamName].losses += 1;
+			} else if (resultsGr.away_score > resultsGr.home_score) {
+				tableObject[awayTeamName].points += 3;
+				tableObject[homeTeamName].losses += 1;
+				tableObject[awayTeamName].wins += 1;
+			} else {
+				tableObject[homeTeamName].points += 1;
+				tableObject[awayTeamName].points += 1;
+				tableObject[homeTeamName].draws += 1;
+				tableObject[awayTeamName].draws += 1;
+			}
+		}
+
+		var tableArray = [];
+
+		// Calculate goal difference
+		for(var toKey in tableObject) {
+			tableObject[toKey].goal_difference = tableObject[toKey].goals_for - tableObject[toKey].goals_against;
+			tableArray.push(tableObject[toKey]);
+		}
+
+		// Apply any points deductions
+		var ptsDedGr = new GlideRecord("x_78983_football_t_points_deduction");
+		ptsDedGr.addQuery("season", season.sys_id+'');
+		ptsDedGr.addEncodedQuery(resultsEncodedQuery);
+		ptsDedGr.query();
+		while(ptsDedGr.next()) {
+			tableObject[ptsDedGr.team.name+''].points -= ptsDedGr.points_deducted;
+		}
+
+		// Arrange the league table by position
+		tableArray.sort(function(a, b){
+			if(b.points == a.points)
+				if(b.goal_difference == a.goal_difference)
+					return b.goals_for - a.goals_for;
+				else
+					return b.goal_difference - a.goal_difference;
+			else
+				return b.points - a.points;
+		});
+
+		gs.info(JSON.stringify(tableArray));
+
+		// Delete existing table metrics for the current date
+		var existingTableMetricGr = new GlideRecord("x_78983_football_t_table_metric");
+		existingTableMetricGr.addQuery("season", season.sys_id+'');
+		existingTableMetricGr.addQuery("date", date);
+		existingTableMetricGr.deleteMultiple();
+
+		// Create new table metrics
+		var positionCounter = 1;
+		for(var tmKey in tableArray) {
+			var tableMetricGr = new GlideRecord("x_78983_football_t_table_metric");
+			tableMetricGr.initialize();
+			tableMetricGr.season = season.sys_id;
+			tableMetricGr.date = date;
+			tableMetricGr.position = positionCounter++;
+			tableMetricGr.team = tableArray[tmKey].sys_id;
+			tableMetricGr.played = tableArray[tmKey].played;
+			tableMetricGr.wins = tableArray[tmKey].wins;
+			tableMetricGr.draws = tableArray[tmKey].draws;
+			tableMetricGr.losses = tableArray[tmKey].losses;
+			tableMetricGr.goals_for = tableArray[tmKey].goals_for;
+			tableMetricGr.goals_against = tableArray[tmKey].goals_against;
+			tableMetricGr.goal_difference = tableArray[tmKey].goal_difference;
+			tableMetricGr.points = tableArray[tmKey].points;
+			tableMetricGr.insert();
+		}
+
+		return tableArray;
+
+	},
+
+	type: 'tableGeneratorUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-16 11:57:10</sys_created_on>
+        <sys_id>125883164fb03300b259a88ca310c755</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>tableGeneratorUtils</sys_name>
+        <sys_package display_value="Football Table Generator" source="x_78983_football_t">b95fe0614f303300b259a88ca310c787</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Football Table Generator">b95fe0614f303300b259a88ca310c787</sys_scope>
+        <sys_update_name>sys_script_include_125883164fb03300b259a88ca310c755</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-16 12:31:18</sys_updated_on>
+    </sys_script_include>
+</record_update>

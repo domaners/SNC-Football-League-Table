@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Table Metric" max_length="40" name="x_78983_football_t_table_metric" sizeclass="8760" type="collection">
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Draws" max_length="40" name="draws" type="integer"/>
+        <element label="Goals against" max_length="40" name="goals_against" type="integer"/>
+        <element label="Goals for" max_length="40" name="goals_for" type="integer"/>
+        <element label="Goal difference" max_length="40" name="goal_difference" type="integer"/>
+        <element label="Losses" max_length="40" name="losses" type="integer"/>
+        <element label="Played" max_length="40" name="played" type="integer"/>
+        <element label="Points" max_length="40" name="points" type="integer"/>
+        <element label="Position" max_length="40" name="position" type="integer"/>
+        <element label="Season" max_length="32" name="season" reference="x_78983_football_t_season" type="reference"/>
+        <element display="true" label="Team" max_length="32" name="team" reference="x_78983_football_t_team" type="reference"/>
+        <element label="Wins" max_length="40" name="wins" type="integer"/>
+        <index name="index">
+            <element name="season"/>
+        </index>
+        <index name="index2">
+            <element name="team"/>
+        </index>
+    </element>
+</database>

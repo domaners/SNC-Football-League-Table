@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_hr" label="HR" language="en" table="x_78983_football_t_football_results">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_hr</element>
+            <help/>
+            <hint/>
+            <label>HR</label>
+            <language>en</language>
+            <name>x_78983_football_t_football_results</name>
+            <plural>HRs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-15 08:38:48</sys_created_on>
+            <sys_id>0791d50a4f303300b259a88ca310c790</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>HR</sys_name>
+            <sys_package display_value="Football Table Generator" source="x_78983_football_t">b95fe0614f303300b259a88ca310c787</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Football Table Generator">b95fe0614f303300b259a88ca310c787</sys_scope>
+            <sys_update_name>sys_documentation_x_78983_football_t_football_results_u_hr_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-15 08:38:48</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

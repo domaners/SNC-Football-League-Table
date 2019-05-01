@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_lba" label="LBA" language="en" table="x_78983_football_t_football_results">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_lba</element>
+            <help/>
+            <hint/>
+            <label>LBA</label>
+            <language>en</language>
+            <name>x_78983_football_t_football_results</name>
+            <plural>LBAs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-04-26 09:11:06</sys_created_on>
+            <sys_id>d37242e54f013300b259a88ca310c74b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>LBA</sys_name>
+            <sys_package display_value="Football Table Generator" source="x_78983_football_t">b95fe0614f303300b259a88ca310c787</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Football Table Generator">b95fe0614f303300b259a88ca310c787</sys_scope>
+            <sys_update_name>sys_documentation_x_78983_football_t_football_results_u_lba_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-04-26 09:11:06</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

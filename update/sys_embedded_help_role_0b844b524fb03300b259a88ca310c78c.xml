@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_78983_football_t.table_metric_user" name="x_78983_football_t.table_metric_user">cb844b524fb03300b259a88ca310c789</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-16 11:39:27</sys_created_on>
+        <sys_id>0b844b524fb03300b259a88ca310c78c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cb844b524fb03300b259a88ca310c789</sys_name>
+        <sys_package display_value="Football Table Generator" source="x_78983_football_t">b95fe0614f303300b259a88ca310c787</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Football Table Generator">b95fe0614f303300b259a88ca310c787</sys_scope>
+        <sys_update_name>sys_embedded_help_role_0b844b524fb03300b259a88ca310c78c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-16 11:39:27</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

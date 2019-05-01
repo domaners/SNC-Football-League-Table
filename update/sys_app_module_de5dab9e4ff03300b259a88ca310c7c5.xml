@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Football League Tables">49dfe0e94fb03300b259a88ca310c797</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="x_78983_football_t_table_metric">dateONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^EQ<item endquery="false" field="date" goto="false" newquery="false" operator="ON" or="false" value="Today@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>View league tables</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_78983_football_t_table_metric</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report display_value="League table by date">e94ca7da4ff03300b259a88ca310c70c</report>
+        <roles>x_78983_football_t.team_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-16 14:39:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de5dab9e4ff03300b259a88ca310c7c5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_78983_football_t_table_metric</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Football Table Generator" source="x_78983_football_t">b95fe0614f303300b259a88ca310c787</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Football Table Generator">b95fe0614f303300b259a88ca310c787</sys_scope>
+        <sys_update_name>sys_app_module_de5dab9e4ff03300b259a88ca310c7c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-16 14:56:37</sys_updated_on>
+        <timeline_page/>
+        <title>View league tables (by date)</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>
